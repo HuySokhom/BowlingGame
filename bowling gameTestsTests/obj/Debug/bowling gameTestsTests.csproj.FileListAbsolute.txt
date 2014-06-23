@@ -1,0 +1,9 @@
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\bin\Debug\bowling gameTestsTests.dll
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\bin\Debug\bowling gameTestsTests.pdb
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\bin\Debug\bowling gameTests.dll
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\bin\Debug\bowling gameTests.pdb
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\obj\Debug\bowling gameTestsTests.csprojResolveAssemblyReference.cache
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\obj\Debug\bowling gameTestsTests.dll
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\obj\Debug\bowling gameTestsTests.pdb
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\bin\Debug\bowling game.exe
+C:\Users\Huy Sokhom\Desktop\bowling game\bowling gameTestsTests\bin\Debug\bowling game.pdb
