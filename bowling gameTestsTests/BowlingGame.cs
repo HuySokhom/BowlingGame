@@ -29,12 +29,12 @@ namespace bowling_gameTestsTests
                 }
                 else if (IsSpare(roll))
                 {
-                    score += 10 + rolls[roll + 2];
+                    score += 10 + SpareBonus(roll);
                     roll += 2;
                 }
                 else
                 {
-                    score += rolls[roll] + rolls[roll + 1];
+                    score += SumOfBallInFrame(roll);
                     roll += 2;
                 }
                
@@ -50,6 +50,16 @@ namespace bowling_gameTestsTests
         private int StrikeBouns(int roll)
         {
             return rolls[roll + 1] + rolls[roll + 2];
+        }
+
+        private int SumOfBallInFrame(int roll)
+        {
+            return rolls[roll] + rolls[roll + 1];
+        }
+
+        private int SpareBonus(int roll)
+        {
+            return rolls[roll + 2];
         }
     }
 }
