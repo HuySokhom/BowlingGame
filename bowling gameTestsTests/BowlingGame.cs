@@ -12,7 +12,7 @@ namespace bowling_gameTestsTests
         
         public void Roll(int pins)
         {
-            
+            score += pins;
         }
         public int Score()
         {
