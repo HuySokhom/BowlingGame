@@ -8,6 +8,15 @@ namespace bowling_gameTestsTests
 {
     class BowlingGame
     {
-
+        private int score;
+        
+        public void Roll(int pins)
+        {
+            
+        }
+        public int Score()
+        {
+            return score;
+        }
     }
 }
