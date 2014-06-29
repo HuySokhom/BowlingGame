@@ -21,16 +21,23 @@ namespace bowling_gameTestsTests
             int roll = 0;
             for (int frame = 0; frame < 10; frame++)
             {
-                // if spare
-                if (IsSpare(roll))
+                // if strike
+                if (rolls[roll] == 10)
+                {
+                    score += 10 + StrikeBouns(roll);
+                    roll++;
+                }
+                else if (IsSpare(roll))
                 {
                     score += 10 + rolls[roll + 2];
+                    roll += 2;
                 }
                 else
                 {
                     score += rolls[roll] + rolls[roll + 1];
+                    roll += 2;
                 }
-                roll += 2;
+               
             }
             return score;
         }
@@ -38,6 +45,11 @@ namespace bowling_gameTestsTests
         private bool IsSpare(int roll)
         {
             return rolls[roll] + rolls[roll + 1] == 10;
+        }
+
+        private int StrikeBouns(int roll)
+        {
+            return rolls[roll + 1] + rolls[roll + 2];
         }
     }
 }
