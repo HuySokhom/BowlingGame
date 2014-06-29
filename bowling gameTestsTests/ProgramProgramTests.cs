@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -93,5 +94,18 @@ namespace bowling_game.Tests.Tests
            
             Console.WriteLine("Value 16 = "+ Game.Score());
         }
+
+        [TestMethod]
+        public void TestStrike()
+        {
+            Game.Roll(10);
+            Game.Roll(3);
+            Game.Roll(4);
+            RollMany(16,0);
+            Assert.AreEqual(24,Game.Score());
+
+            Console.WriteLine("Value of strike is Expected 24  and actual " + Game.Score());
+        }
+
     }
 }
