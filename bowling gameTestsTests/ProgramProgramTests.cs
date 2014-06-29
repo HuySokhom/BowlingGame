@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using bowling_game.Tests;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using bowling_gameTestsTests;
+
 namespace bowling_game.Tests.Tests
 {
     [TestClass()]
@@ -27,6 +29,25 @@ namespace bowling_game.Tests.Tests
         public void TestMethod()
         {
             Console.WriteLine("Hello");
+        }
+
+        [TestMethod]
+        public void TestGutterGame()
+        {
+            var Game = new BowlingGame();
+
+            for (int i = 0; i < 20; i++)
+            {
+                Game.Roll(0);
+            }
+
+            /*
+             * Assert.AreEqual method is use to verify 
+             * two value is equal
+            */
+            Assert.AreEqual(0,Game.Score());
+
+            Console.WriteLine("Success ");
         }
     }
 }
