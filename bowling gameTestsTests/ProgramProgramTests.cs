@@ -35,7 +35,15 @@ namespace bowling_game.Tests.Tests
             Game = new BowlingGame();
         }
 
-        
+        /// <summary>
+        /// Clean when TestMethod ready
+        /// </summary>
+
+        [TestCleanup]
+        public void Cleanup()
+        {
+            Game = null;
+        }
 
         [TestMethod()]
         public void TestMethod()
