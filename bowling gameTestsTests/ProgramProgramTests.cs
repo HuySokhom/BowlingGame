@@ -82,5 +82,13 @@ namespace bowling_game.Tests.Tests
             Console.WriteLine("Success Test All One");
         }
 
+        public void RollMany(int rolls, int pins)
+        {
+            for (int i = 0; i < rolls; i++)
+            {
+                Game.Roll(pins);
+            }
+        }
+
     }
 }
