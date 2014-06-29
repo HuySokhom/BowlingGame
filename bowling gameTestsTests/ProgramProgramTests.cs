@@ -107,5 +107,12 @@ namespace bowling_game.Tests.Tests
             Console.WriteLine("Value of strike is Expected 24  and actual " + Game.Score());
         }
 
+        [TestMethod]
+        public void TestPerfactGame()
+        {
+            RollMany(12, 10);
+            Assert.AreEqual(300, Game.Score());
+            Console.WriteLine("Value of strike is Expected 300  and actual " + Game.Score());
+        }
     }
 }
