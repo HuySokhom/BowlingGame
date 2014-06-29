@@ -12,7 +12,7 @@ namespace bowling_game.Tests.Tests
     [TestClass()]
     public class ProgramProgramTests
     {
-
+        private BowlingGame Game;
         /// <summary>
         /// TestContext 
         /// Used to store information that is provided to unit tests.
@@ -34,7 +34,7 @@ namespace bowling_game.Tests.Tests
         [TestMethod]
         public void TestGutterGame()
         {
-            var Game = new BowlingGame();
+            
 
             for (int i = 0; i < 20; i++)
             {
