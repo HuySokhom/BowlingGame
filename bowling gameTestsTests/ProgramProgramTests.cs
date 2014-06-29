@@ -82,5 +82,16 @@ namespace bowling_game.Tests.Tests
             }
         }
 
+        [TestMethod]
+        public void TestOneSpare()
+        {
+            Game.Roll(5);
+            Game.Roll(5);
+            Game.Roll(3);
+            RollMany(17,0);
+            Assert.AreEqual(16,Game.Score());
+           
+            Console.WriteLine("Value 16 = "+ Game.Score());
+        }
     }
 }
