@@ -54,32 +54,24 @@ namespace bowling_game.Tests.Tests
         [TestMethod]
         public void TestGutterGame()
         {
-            
-
-            for (int i = 0; i < 20; i++)
-            {
-                Game.Roll(0);
-            }
-
+            RollMany(20,0);
             /*
              * Assert.AreEqual method is use to verify 
              * two value is equal
             */
             Assert.AreEqual(0,Game.Score());
-
-            Console.WriteLine("Success ");
+            Console.WriteLine("Success");
+            Console.WriteLine("Value 0 = "+ Game.Score());
         }
 
         [TestMethod]
         public void TestAllOne()
         {
-            for (int i = 0; i < 20; i++)
-            {
-                Game.Roll(1);
-            }
+            RollMany(20,1);
             Assert.AreEqual(20, Game.Score());
 
             Console.WriteLine("Success Test All One");
+            Console.WriteLine("Value 20 = " + Game.Score());
         }
 
         public void RollMany(int rolls, int pins)
