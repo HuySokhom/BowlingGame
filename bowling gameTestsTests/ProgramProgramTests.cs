@@ -10,10 +10,23 @@ namespace bowling_game.Tests.Tests
     [TestClass()]
     public class ProgramProgramTests
     {
-        [TestMethod()]
-        public void TestGutterTest()
+
+        /// <summary>
+        /// TestContext 
+        /// Used to store information that is provided to unit tests.
+        /// </summary>
+        private TestContext testContextInstance;
+
+        public TestContext TestContext
         {
-            Assert.Fail();
+            get { return testContextInstance; }
+            set { testContextInstance = value; }
+        }
+
+        [TestMethod()]
+        public void TestMethod()
+        {
+            Console.WriteLine("Hello");
         }
     }
 }
