@@ -69,5 +69,18 @@ namespace bowling_game.Tests.Tests
 
             Console.WriteLine("Success ");
         }
+
+        [TestMethod]
+        public void TestAllOne()
+        {
+            for (int i = 0; i < 20; i++)
+            {
+                Game.Roll(1);
+            }
+            Assert.AreEqual(20, Game.Score());
+
+            Console.WriteLine("Success Test All One");
+        }
+
     }
 }
