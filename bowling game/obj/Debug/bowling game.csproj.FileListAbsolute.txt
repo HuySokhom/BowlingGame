@@ -4,3 +4,9 @@ C:\Users\Huy Sokhom\Desktop\bowling game\bowling game\bin\Debug\bowling game.pdb
 C:\Users\Huy Sokhom\Desktop\bowling game\bowling game\obj\Debug\bowling game.csprojResolveAssemblyReference.cache
 C:\Users\Huy Sokhom\Desktop\bowling game\bowling game\obj\Debug\bowling game.exe
 C:\Users\Huy Sokhom\Desktop\bowling game\bowling game\obj\Debug\bowling game.pdb
+C:\Users\Huy Sokhom\Desktop\BowlingGame\BowlingGame\bowling game\bin\Debug\bowling game.exe.config
+C:\Users\Huy Sokhom\Desktop\BowlingGame\BowlingGame\bowling game\obj\Debug\bowling game.exe
+C:\Users\Huy Sokhom\Desktop\BowlingGame\BowlingGame\bowling game\obj\Debug\bowling game.pdb
+C:\Users\Huy Sokhom\Desktop\BowlingGame\BowlingGame\bowling game\bin\Debug\bowling game.exe
+C:\Users\Huy Sokhom\Desktop\BowlingGame\BowlingGame\bowling game\bin\Debug\bowling game.pdb
+C:\Users\Huy Sokhom\Desktop\BowlingGame\BowlingGame\bowling game\obj\Debug\bowling game.csprojResolveAssemblyReference.cache

@@ -68,5 +68,10 @@ namespace bowling_gameTests
         {
             return rolls[roll] == 10;
         }
+
+        public string Name(string name)
+        {
+            return "Your Name is " + name;
+        }
     }
 }

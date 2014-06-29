@@ -63,6 +63,7 @@ namespace bowling_game.Tests
             Assert.AreEqual(20, g.Score());
             Console.WriteLine("Score :" + g.Score());
             Console.WriteLine("Test All One Success");
+            Console.Write("Test make a change");
         }
 
 
