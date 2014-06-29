@@ -18,9 +18,19 @@ namespace bowling_gameTestsTests
         public int Score()
         {
             int score = 0;
-            for (int i = 0; i < rolls.Length; i++)
+            int roll = 0;
+            for (int frame = 0; frame < 10; frame++)
             {
-                score += rolls[i];
+                // if spare
+                if (rolls[roll] + rolls[roll + 1] == 10)
+                {
+                    score += 10 + rolls[roll + 2];
+                }
+                else
+                {
+                    score += rolls[roll] + rolls[roll + 1];
+                }
+                roll += 2;
             }
             return score;
         }
