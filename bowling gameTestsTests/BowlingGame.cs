@@ -22,7 +22,7 @@ namespace bowling_gameTestsTests
             for (int frame = 0; frame < 10; frame++)
             {
                 // if strike
-                if (rolls[roll] == 10)
+                if (IsStrike(roll))
                 {
                     score += 10 + StrikeBouns(roll);
                     roll++;
@@ -60,6 +60,10 @@ namespace bowling_gameTestsTests
         private int SpareBonus(int roll)
         {
             return rolls[roll + 2];
+        }
+        public bool IsStrike(int roll)
+        {
+            return rolls[roll] == 10;
         }
     }
 }
