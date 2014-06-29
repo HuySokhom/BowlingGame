@@ -25,6 +25,18 @@ namespace bowling_game.Tests.Tests
             set { testContextInstance = value; }
         }
 
+        /*
+         *  Initialize when system run 
+         */
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            Game = new BowlingGame();
+        }
+
+        
+
         [TestMethod()]
         public void TestMethod()
         {
